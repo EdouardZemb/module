@@ -1,5 +1,6 @@
 import {display} from './modules/display.js';
 import math from './modules/math.js';
+import dom from './modules/dom.js';
 
 // Un module de Math
 // - sum([n, ...]) : somme des éléments du tableau
@@ -17,5 +18,6 @@ import math from './modules/math.js';
 display(math.sum, math.sum([2, 3, 4])); // sum => 9
 display(math.isOdd, math.isOdd(10));
 display(math.sumOddNumbers, math.sumOddNumbers([2, 3, 4, 5])); // sumOddNumbers => 8
-display(getPosition, getPosition(document.querySelector("#ball"))); // getPosition => [12, 100]
+display(dom.getPosition, dom.getPosition(document.querySelector(".title"))); // getPosition => [12, 100]
+display(dom.moveTo, dom.moveTo(document.querySelector(".title"), 500, 100));
 // ...
